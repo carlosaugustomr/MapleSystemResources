@@ -5,7 +5,10 @@
 package View;
 
 import Controller.LoginController;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 /**
  *
@@ -171,10 +174,47 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelTextUsuario;
     // End of variables declaration//GEN-END:variables
 
-    
-
+    /**
+     *
+     * @param mensagem
+     */
     public void exibeMensagem(String mensagem) { 
         JOptionPane.showMessageDialog(null, mensagem);
     
     }
+
+   
+
+    public JPasswordField getTextSenha() {
+        return TextSenha;
+    }
+
+    public void setTextSenha(JPasswordField TextSenha) {
+        this.TextSenha = TextSenha;
+    }
+
+    public JTextField getTextUsuario() {
+        return TextUsuario;
+    }
+
+    public void setTextUsuario(JTextField TextUsuario) {
+        this.TextUsuario = TextUsuario;
+    }
+
+    public JLabel getjLabelTextSenha() {
+        return jLabelTextSenha;
+    }
+
+    public void setjLabelTextSenha(JLabel jLabelTextSenha) {
+        this.jLabelTextSenha = jLabelTextSenha;
+    }
+
+    public JLabel getjLabelTextUsuario() {
+        return jLabelTextUsuario;
+    }
+
+    public void setjLabelTextUsuario(JLabel jLabelTextUsuario) {
+        this.jLabelTextUsuario = jLabelTextUsuario;
+    }
+    
 }

@@ -13,15 +13,14 @@ import View.Login;
  */
 public class LoginHelper {
     private final Login view; 
-    private LoginHelper helper;
 
     public LoginHelper(Login view) {
         this.view = view;
-        this.helper= new LoginHelper(view);
+        
     }
     public Usuario obterModelo(){        
         String nome = view.getTextUsuario().getText();
-        String senha = view.getTextSenha().getText();
+        var senha = view.getTextSenha().getText();
         Usuario modelo = new Usuario(0,nome,senha);
         return modelo;
     }
